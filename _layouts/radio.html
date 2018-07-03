@@ -1,0 +1,61 @@
+---
+layout: compress
+---
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"><!--<![endif]-->
+<head>
+    {% include head.html %}
+    <script src="/node_modules/rss-parser/dist/rss-parser.min.js"></script>
+    <script>
+
+    // Note: some RSS feeds can't be loaded in the browser due to CORS security.
+    // To get around this, you can use a proxy.
+    const CORS_PROXY = "https://cors-anywhere.herokuapp.com/"
+
+    let parser = new RSSParser();
+    parser.parseURL(CORS_PROXY + 'https://www.reddit.com/.rss', function(err, feed) {
+      console.log(feed.title);
+      feed.items.forEach(function(entry) {
+        console.log(entry.title + ':' + entry.link);
+      })
+    })
+
+    </script>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header" role="banner">
+        <div class="wrapper">
+            <div class="content">
+              <a class="btn" href="{{site.url}}"> <!--  zoombtn -->
+                  <i class="fa fa-close"></i>
+              </a>
+                <div class="post-title">
+                    <i class="fa fa-headphones"></i>
+                    <h1>{{ page.title }}</h1>
+                </div>
+                <div class="post-list">
+<p>J'anime tous les mardis soirs, en direct, l'émission Cause à Effet, le magazine du travail, de l'emploi et de la formation. Pour écouter, branchez-vous sur 93.1, ou bien consultez <a href="https://cause-commune.fm">cause-commune.fm</a></p>
+<p>Ici, prochainement, vous retrouverez tous les pdocasts en téléchargement.</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+  {% for e in site.external_feed %}
+    <h2>{{ e.title }}</h2>
+    <p>{{ e.feed_content }}</p>
+  {% endfor %}
+<section class="special">
+  <ul class="actions">
+  <li><a href="{{ site.baseurl }}{{ e.url }}" class="button {% cycle '', 'alt'%}">Read More</a></li>
+  </ul>
+</section>
+
+    {% include scripts.html %}
+</body>
+</html>
