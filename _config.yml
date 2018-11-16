@@ -63,17 +63,17 @@ medium:            '@stephanemanet'
 
 # Gems
 gems:
-  - jekyll-mentions
+#  - jekyll-mentions
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-gist
-  - feedjira
+#  - feedjira
 
 # collections:
 #  - external_feed
 
-jekyll-mentions:
-    base_url: https://github.com
+#jekyll-mentions:
+#    base_url: https://github.com
 
 # Exclude list
 exclude: [README.md, Gemfile, Gemfile.lock, node_modules, gulpfile.js, package.json, _site, src, vendor, CNAME, LICENSE, Rakefile]
