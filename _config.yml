@@ -8,7 +8,7 @@ logo:               'assets/img/stephane-manet.jpg'
 background:         'assets/img/placeholder-big.jpg'
 tiled_bg:           false   # Set this true if you want to tile your background image, otherwise it will be covered
 locale:             fr_FR
-url:                http://localhost:4000
+url:                https://stephma.net
 # https://stephma.net
 # Jekyll
 permalink:          /:title/
