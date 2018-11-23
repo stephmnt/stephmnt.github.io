@@ -8,17 +8,9 @@ layout: compress
 <!--[if gt IE 8]><!--> <html class="no-js"><!--<![endif]-->
 <head>
     {% include head.html %}
-    <div id="podcastsrss"></div>
-    <script src="js/feedek.js"></script>    
 
-    <script>
-    $('#podcastsrss').FeedEk({
-    FeedUrl: 'https://cause-commune.fm/cae/cae.xml',
-    MaxCount: 50,
-    ShowPubDate: false,
-    ShowDesc: false
-    });
-    </script>
+    <script src="js/feedek.js"></script>
+
     <!--
     <script src="/node_modules/rss-parser/dist/rss-parser.min.js"></script>
     <script>
@@ -55,6 +47,7 @@ layout: compress
 <p>J'anime tous les mardis soirs, en direct, l'émission Cause à Effet, le magazine du travail, de l'emploi et de la formation. Pour écouter, branchez-vous sur 93.1, ou bien consultez <a href="https://cause-commune.fm">cause-commune.fm</a></p>
 <p>Ici, prochainement, vous retrouverez tous les pdocasts en téléchargement.</p>
                 </div>
+                <div id="podcastsrss"></div>
             </div>
         </div>
     </header>
@@ -64,7 +57,14 @@ layout: compress
   <li><a href="{{ site.baseurl }}{{ e.url }}" class="button {% cycle '', 'alt'%}">Read More</a></li>
   </ul>
 </section>
-
+  <script>
+    $('#podcastsrss').FeedEk({
+    FeedUrl: 'https://cause-commune.fm/cae/cae.xml',
+    MaxCount: 50,
+    ShowPubDate: false,
+    ShowDesc: false
+    });
+  </script>
     {% include scripts.html %}
 </body>
 </html>
