@@ -8,6 +8,18 @@ layout: compress
 <!--[if gt IE 8]><!--> <html class="no-js"><!--<![endif]-->
 <head>
     {% include head.html %}
+    <div id="podcastsrss"></div>
+    <script src="js/feedek.js"></script>    
+
+    <script>
+    $('#podcastsrss').FeedEk({
+    FeedUrl: 'https://cause-commune.fm/cae/cae.xml',
+    MaxCount: 50,
+    ShowPubDate: false,
+    ShowDesc: false
+    });
+    </script>
+    <!--
     <script src="/node_modules/rss-parser/dist/rss-parser.min.js"></script>
     <script>
 
@@ -24,6 +36,7 @@ layout: compress
     })
 
     </script>
+    -->
 </head>
 <body>
 
