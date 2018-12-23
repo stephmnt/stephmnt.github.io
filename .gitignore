@@ -1,5 +1,6 @@
 *.gem
 *.rbc
+*.old
 Gemfile.lock
 /.config
 /.sass-cache
