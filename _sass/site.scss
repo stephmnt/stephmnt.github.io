@@ -8,11 +8,14 @@
 }
 
 .post-title > i {font-size: 4em;}
-
-/* BEGIN Medium */
+.medium-post{}
+.post-image{}
+.post-content{}
+.box-medium{}
+/* BEGIN Medium
 .medium-post{margin-bottom:10px;}
-.post-image{max-width:35%;}/* TODO sauf responsive */
-.post-content{width:100%;max-width:65%;}/*  TODO sauf responsive} */
+.post-image{max-width:35%;} TODO sauf responsive
+.post-content{width:100%;max-width:65%;}  TODO sauf responsive
 .post-content > h3, h4 {margin:0;}
 .readmore{float: right;}
 .post-image, .post-content{
@@ -36,10 +39,12 @@
 		max-width:100%;
 		text-align:center;
 	}
-}	
+}
 .post-image img {
 	width:100%;
 }
+*/
+/* -- Fin Medium -- */
 
 html {
 	@extend %extend1;
