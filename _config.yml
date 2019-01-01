@@ -5,7 +5,7 @@ description:        "Consultant formateur spécialiste AFEST & blended learning.
 reading_time:       true
 words_per_minute:   200
 logo:               'assets/img/stephane-manet.jpg'
-background:         'assets/img/placeholder-big.jpg'
+background:         'assets/img/background.png'
 tiled_bg:           false   # Set this true if you want to tile your background image, otherwise it will be covered
 locale:             fr_FR
 url:                https://stephma.net

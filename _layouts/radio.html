@@ -43,27 +43,23 @@ layout: compress
                     <h1>{{ page.title }}</h1>
                 </div>
                 <div class="post-list">
-<p>J'anime tous les mardis soirs, en direct, l'émission Cause à Effet, le magazine du travail, de l'emploi et de la formation. Pour écouter, branchez-vous sur 93.1, ou bien consultez <a href="https://cause-commune.fm">cause-commune.fm</a></p>
+<p>J'anime tous les mardis soirs, en direct, l'émission <a href="https://stephmnt.github.io/cae" target="_blank">Cause à Effet</a>, le magazine du travail, de l'emploi et de la formation. Pour écouter, branchez-vous sur 93.1, ou bien consultez <a href="https://cause-commune.fm">cause-commune.fm</a></p>
+<h3>Liste des émissions :</h3>
                 </div>
                 <div id="podcastsrss"></div>
             </div>
         </div>
     </header>
 
-<section class="special">
-  <ul class="actions">
-  <li><a href="{{ site.baseurl }}{{ e.url }}" class="button {% cycle '', 'alt'%}">Read More</a></li>
-  </ul>
-</section>
+  <script src="{{ site.url }}/assets/js/feedek.js"></script>
   <script>
     $('#podcastsrss').FeedEk({
-    FeedUrl: 'https://cause-commune.fm/cae/cae.xml',
+    FeedUrl: 'https://cause-commune.fm/feed/podcast/cause-a-effet',
     MaxCount: 50,
     ShowPubDate: false,
     ShowDesc: false
     });
   </script>
     {% include scripts.html %}
-    <script src="{{ site.url }}/assets/js/feedek.js"></script>    
 </body>
 </html>
