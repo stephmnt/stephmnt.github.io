@@ -20,4 +20,4 @@ Producteur de l'émission de radio _Cause à Effet_ sur [Cause Commune 93.1 FM](
 ## À propos de ce site
 J'ai développé ce site avec Jekyll, le code source est disponible sur Github.
 
-[<i class="fa fa-github"></i> Code source](https://github.com/stephmnt){: .btn}
+[<i class="fab fa-github"></i> Code source](https://github.com/stephmnt){: .btn}

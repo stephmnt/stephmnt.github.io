@@ -11,6 +11,8 @@
 .medium-post{
 	float:left;
 	max-width:50%;
+	width: 360px;
+	background-size: cover;
 }
 
 .post-box {
@@ -44,8 +46,8 @@
         }
     }
     &:hover {
-        .post-caption {
-            opacity: 1;
+        .post-image {
+            opacity: 0.8;
         }
     }
     @media (min-width: 768px) {
@@ -321,7 +323,7 @@ header .entry-meta {
 	}
 }
 
-.post-title .fa {font-size:48px;}
+.post-title .fab, .post-title .fas {font-size:48px;}
 
 .entry-title a {
     text-decoration: none;

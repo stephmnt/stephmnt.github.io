@@ -36,7 +36,7 @@ google:
 #bing-verify:
 #email:
 twitter:            stephanemanet
-facebook:           stephane.manet.cm
+#facebook:           stephane.manet.cm
 github-url:         stephmnt
 #stackoverflow:     123456/username   from a "http://stackoverflow.com/users/123456/username" link
 linkedin:           stephanemanet
@@ -45,6 +45,7 @@ instagram:          stephanemanet
 #lastfm:            username
 #tumblr:            username
 medium:            '@stephanemanet'
+researchgate:       stephanemanet
 #pinterest:         username
 #foursquare:        username
 #dribbble:          username
