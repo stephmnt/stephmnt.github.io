@@ -11,8 +11,12 @@ En ce sens, je réalise des formations de formateur sur les théories des appren
 
 ### Ils me font confiance
 
- * Le CNAM
- * UNREP
+<figure class="third">
+	<img src="/assets/img/logo-cnam.png">
+	<img src="/assets/img/logo-plateau-urbain.jpg">
+	<img src="/assets/img/logo-unrep.png">
+	<figcaption>J'interviens dans différentes structures, que ce soit dans des organismes de formation ou bien des entreprises pour accompagner leur plan de formation.</figcaption>
+</figure>
 
 ## Radio
 Producteur de l'émission de radio _Cause à Effet_ sur [Cause Commune 93.1 FM](https://cause-commune.fm), le magazine du travail, de l'emploi et de la formation en direct tous les mardis soir dès 21h.
@@ -20,4 +24,4 @@ Producteur de l'émission de radio _Cause à Effet_ sur [Cause Commune 93.1 FM](
 ## À propos de ce site
 J'ai développé ce site avec Jekyll, le code source est disponible sur Github.
 
-[<i class="fab fa-github"></i> Code source](https://github.com/stephmnt){: .btn}
+[<i class="fab fa-github"></i> Code source](https://github.com/stephmnt/stephmnt.github.io){: .btn}
