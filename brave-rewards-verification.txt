@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: stephma.net
+Token: 3b9e0c7902f30976ccaf222058ebc168aaa99c6d719d258adaf2562ef9094dbd
